@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");		
+	}
+
+	function letraGrande(){
+
+		document.write("<h1></h1>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+		letraGrande();
+	}
+
+	var anoCopa = 1930;
+	var anoLimite = parseInt(prompt("Informe o ano limite"));
+	
+
+	while (anoCopa <= anoLimite) {
+
+		mostra ("Em " + anoCopa + " houve copa");
+		anoCopa = anoCopa + 4;
+	}
+
+	mostra ("FIM");
+	
+</script>
+
+
+
+

@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");		
+	}
+
+	function letraGrande(){
+
+		document.write("<h1></h1>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+		letraGrande();
+	}
+
+	var numeroInicial = 0;
+	var numeroLimite = parseInt(prompt("Informe o número limite"));
+	
+
+	while (numeroInicial <= numeroLimite) {
+
+		mostra ("O número " + numeroInicial + " é um número par.");
+		numeroInicial = numeroInicial + 2;
+	}
+
+	mostra ("FIM");
+	
+</script>
+
+
+
+
